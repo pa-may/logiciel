@@ -1,0 +1,68 @@
+.footer{
+    background-color: black;
+    display: flex;
+}
+
+.footer-box{
+    width: 100%;
+    padding: 2rem 7rem;
+    color: white;
+}
+
+/* .footer-logo{
+    background-image: url(../img/logo.png);
+} */
+.footer-items{
+    list-style: none;
+}
+.footer-list{
+    padding: .5rem;
+    border-bottom: dotted white .2rem;
+    cursor: pointer;
+    transition: ease-in-out 0.3s ;
+}
+.footer-list:hover{
+    color: gray;
+    padding-left: 1rem;
+}
+
+.footer-box{}
+
+.footer-text{
+    font-size: 2rem;
+}
+
+.footer-socials{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-para{
+    font-size: 1.5rem;
+    color: white;
+    padding: 2rem 0rem;
+}
+
+.icon{
+    width: 5rem;
+    height: 5rem;
+    background-color: rebeccapurple;
+    cursor: pointer;
+}
+
+.icon:hover{
+    transform: scale(1.05);
+
+}
+
+/* .footer-icon-1{background-image: url(./img/facebook.png);}
+.footer-icon-2{background-image: url(./img/instagram.png);}
+.footer-icon-3{background-image: url(./img/twitter.png);}
+.footer-icon-4{background-image: url(./img/email.png);} */
+
+.small-footer{
+    background-color: rgb(18, 18, 18);
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+}

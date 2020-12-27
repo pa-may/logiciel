@@ -1,0 +1,14 @@
+.side__about {
+  flex: 0 0 45%;
+  width: 45%;
+}
+
+.side__text-black {
+  padding: 8rem 6rem;
+  background-color: black;
+}
+
+.side__text-red {
+  padding: 4rem;
+  background-color: rgb(255, 71, 71);
+}

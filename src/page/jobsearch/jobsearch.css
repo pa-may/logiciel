@@ -1,0 +1,126 @@
+.jobsearch {
+  width: 100%;
+  padding: 0 5rem;
+}
+
+.jobsearch__fields {
+  display: flex;
+  margin-top: 5rem;
+}
+
+.job__filter {
+  flex-grow: 1;
+  padding: 0 5rem 0 2.5rem;
+}
+
+.filter__container {
+  max-height: 50rem;
+  overflow-y: scroll;
+}
+.filter__header {
+  width: 100%;
+  padding: 1.25rem 2.5rem;
+  border-radius: 10px;
+  font-size: 2rem;
+  box-shadow: 0 12px 25px -8px rgba(255, 86, 86, 0.32);
+}
+
+.filter__fields {
+  display: flex;
+  align-items: center;
+  padding: 2rem 2.5rem;
+}
+.filter__input {
+  height: 1.6rem;
+  margin-right: 2rem;
+  width: 1.6rem;
+}
+.filter__label {
+  color: rgb(184, 184, 184);
+}
+.filter__number {
+  margin-left: auto;
+  color: rgb(184, 184, 184);
+}
+.filter__limit {
+  float: right;
+}
+
+.job {
+  width: 85rem;
+}
+.job__container {
+  width: 100%;
+  margin-bottom: 5rem;
+  border: 0.5px solid rgb(190, 190, 190);
+  font-size: 1.4rem;
+}
+.job__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(255, 71, 71);
+  color: whitesmoke;
+  height: 7rem;
+  padding: 0 5rem;
+}
+.job__title {
+  font-size: 1.6rem;
+}
+.job__company {
+  font-size: 1.6rem;
+  color: #702214;
+}
+.job__sallary {
+}
+.job__body {
+  display: flex;
+  height: 20rem;
+}
+.job__description {
+  padding: 2.5rem 5rem;
+  color: rgb(44, 44, 44);
+  flex: 0 0 65%;
+}
+.job__detail {
+  background-color: rgba(255, 71, 71, 0.534);
+  flex: 0 0 35%;
+  padding: 2.5rem;
+}
+.job__posted-date {
+}
+.job__location {
+}
+.job__btn {
+  background-color: rgb(245, 47, 47);
+  border-radius: 1px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.job__btn:hover {
+  background-color: rgb(245, 81, 81);
+}
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  text-align: center;
+  margin: 0 0 5rem;
+  border-top: 1px solid #dedede;
+}
+.pagination__btn {
+  padding: 1.5rem 0;
+  width: 12.5rem;
+  border: 1px solid #dedede;
+  cursor: pointer;
+}
+.pagination__page-container {
+  display: flex;
+}
+.pagination__page {
+  padding: 1.5rem 0;
+  width: 5rem;
+  border: 1px solid #dedede;
+  cursor: pointer;
+}

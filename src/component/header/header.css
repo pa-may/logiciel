@@ -1,0 +1,135 @@
+header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 2.5rem 5rem;
+  background-image: linear-gradient(to right, white 50%, rgb(255, 71, 71) 50%);
+  width: 100%;
+  z-index: 20;
+}
+header > a:not(:first-child) {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: whitesmoke;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+}
+.header__mobile {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(255, 71, 71);
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  padding: 20% 0;
+  opacity: 0;
+  transition: all 2s;
+  animation: appear 0.5s;
+}
+.header__mobile > a {
+  font-size: 5rem;
+  color: white;
+  text-decoration: none;
+  height: 12vh;
+  line-height: 12vh;
+  border-bottom: 1px solid white;
+  width: 100%;
+  text-align: center;
+}
+
+.logo {
+  height: 5rem;
+}
+.logo-text {
+  font-size: 3rem;
+}
+.logo-container {
+  display: flex;
+  justify-self: flex-start;
+  margin-right: auto;
+  align-items: center;
+  text-decoration: none;
+  color: #2c2c2c;
+}
+.change {
+  opacity: 1 !important;
+}
+.container {
+  display: inline-block;
+  cursor: pointer;
+  z-index: 1000;
+}
+.bar1,
+.bar2,
+.bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+.bar--active {
+  background-color: #fff;
+}
+/* Rotate first bar */
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+/* Fade out the second bar */
+.change .bar2 {
+  opacity: 0;
+}
+/* Rotate last bar */
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+@media only screen and (max-width: 78.125em) {
+  header > a:not(:first-child) {
+    margin: 0 0.75rem;
+  }
+}
+@media only screen and (max-width: 68.75em) {
+  header {
+    padding: 2.5rem 1.25rem;
+  }
+}
+@media only screen and (max-width: 64.375em) {
+  header {
+    background: white;
+    padding: 5rem 7.5rem;
+  }
+  .logo-text {
+    font-size: 5rem;
+    margin-left: 3rem;
+    font-weight: 700;
+  }
+  header > .desktop {
+    display: none;
+  }
+  header > .mobile {
+    display: unset;
+  }
+  .header__mobile {
+    display: flex;
+  }
+}
+.mobile {
+  display: none;
+}
+@keyframes appear {
+  0% {
+    opacity: 0%;
+  }
+  50% {
+    opacity: 50%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
